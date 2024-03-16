@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dony Ahmad Munir</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="fixed top-0 z-20 w-screen bg-white border-b-4 border-black" id="nav">
+        <div class="px-4 py-2  md:px-[24px] lg:px-[120px] flex justify-between items-center">
+            <!-- Brand (Logo) -->
+            <a class="items-center" href="/index.html">
+                <div class="flex items-center">
+                    <img src="assets/img/logo.png" alt="" srcset="">
+                    <span class="text-sm font-semibold text-black">Dony Ahmad Munir</span>
+                </div>
+            </a>
+            <!-- Toggler untuk menu responsif -->
+            <div class="md:hidden">
+                <button type="button" class="text-gray-600 focus:outline-none" data-target="#menu"
+                    onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                    <span class="hidden">toggle</span>
+                </button>
+            </div>
+
+            <div class="hidden md:flex md:items-center md:space-x-4">
+                <a href="#profil"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Profil</a>
+                <a href="#prestasi"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Prestasi</a>
+                <a href="#penghargaan"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Penghargaan</a>
+            </div>
+            <div class="hidden md:flex md:items-center md:ml-3">
+                <a href="#cta">
+                    <button type="button" class="btn-primary">
+                        Dukung Pa Dony
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class=" px-4 py-4 border-t-2 border-gray-200 space-y-2 flex items-center flex-col md:hidden md:items-center"
+            id="menu">
+            <a href="#profil"
+                class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Profil</a>
+            <a href="#prestasi"
+                class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Prestasi</a>
+            <a href="#penghargaan"
+                class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Penghargaan</a>
+            <a href="#cta">
+                <button type="button" class="btn-primary">
+                    Dukung Pa Dony
+                </button>
+            </a>
+        </div>
+    </nav>
+    <main class="mt-8">
+        <section id="hero" class="h-dvh fluid bg-primary-bg ">
+            <div class="flex flex-col-reverse xl:flex-row items-center gap-8 xl:justify-between">
+                <div class="flex flex-col gap-2 items-start md:items-center lg:items-start w-full xl:w-4/6">
+                    <div class="label">
+                        Calon Bupati
+                    </div>
+                    <h1 class="text-5xl xl:text-6xl font-bold">Sumedang 2024-2029</h1>
+                    <p class="text-base xl:text-lg font-medium">Dalam 5 tahun memimpin Sumedang (2018-2023) meraih lebih
+                        dari 100
+                        penghargaan tingkat
+                        provinsi dan nasional atas pencapaian dalam mewujudkan Good Governance.</p>
+                    <div class="flex mt-8 flex-row gap-2">
+                        <a href="#cta" class="btn-primary"> Dukung Pa Dony</a>
+                        <a href="#profil" class="btn-outline"> Lihat Profil</a>
+                    </div>
+                </div>
+                <div class="max-w-lg xl:w-2/6"><img src="assets/img/img-hero.png" class="w-full" alt="" srcset=""></div>
+            </div>
+        </section>
+        <section id="profil" class="fluid py-20 bg-primary-main">
+            <div class="flex flex-col content-center">
+                <h1 class="text-5xl font-bold text-white text-center"> Profil</h1>
+                <p class="text-xl font-medium text-white text-center pt-1 pb-12">Kenal Lebih Dekat</p>
+                <div class="flex flex-col xl:flex-row items-start gap-14 xl:justify-between">
+                    <div class="flex flex-col gap-12 group card items-center xl:w-1/3">
+                        <img src="assets/img/img-profil.png" alt="" srcset="" class="max-w-lg xl:w-full">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="card-title">Biografi</h2>
+                            <p class="card-body">Dony Ahmad Munir, Bupati Sumedang 2018-2023, lahir 5 Desember 1973 di
+                                Sumedang,
+                                Jawa Barat.
+                                Sebelumnya, ia adalah anggota DPR-RI Komisi X 2014-2018 dan politisi senior PPP Jawa
+                                Barat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 xl:w-2/3">
+                        <div class="flex flex-col  group card gap-2">
+                            <h2 class="card-title">Riwayat Pekerjaan</h2>
+                            <ul class="list-disc text-lg font-medium ml-8">
+                                <li>Bupati Sumedang (2018–2023)</li>
+                                <li>Anggota DPR RI (2014–2018)</li>
+                                <li>Anggota DPRD Provinsi Jawa Barat (2009–2014)</li>
+                                <li>Wakil Ketua DPRD Kabupaten Sumedang (2004–2009)</li>
+                                <li>Anggota DPRD Kabupaten Sumedang (1999–2004)</li>
+                                <li>Anggota DPRD Kabupaten Sumedang (1997–1999)</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col group card gap-2">
+                            <h2 class="card-title">Riwayat Pendidikan</h2>
+                            <ul class="list-disc text-lg font-medium ml-8">
+                                <li>S3 Universitas Padjadjaran (UNPAD) 2020</li>
+                                <li>S2 Universitas Padjadjaran (UNPAD) 2005</li>
+                                <li>S1 Sekolah Tinggi Teknologi Garut (STTG) Fakultas Teknik dan Industri 1998</li>
+                                <li>SMA Negeri 1 Sumedang 1992</li>
+                                <li>SMP Negeri 1 Sumedang 1989</li>
+                                <li>SDN Sukaraja 1 Sumedang 1986</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col group card gap-2">
+                            <h2 class="card-title">Riwayat Organisasi</h2>
+                            <ul class="list-disc text-lg font-medium ml-8">
+                                <li>Ketua DPP PPP Periode Tahun 2020-2025</li>
+                                <li>Wakil Sekretaris Jenderal PPP versi Romahurmuziy.</li>
+                                <li>Ketua DKM Masjid Agung Sumedang 2012–2015</li>
+                                <li>Ketua DPC PPP Sumedang 2005–2010 dan 2010–2015</li>
+                                <li>Wakil Ketua Pimpinan Wilayah GP ANSHOR 2009–2012</li>
+                                <li>Ketua 1 PMII Koorcab 1998–2000</li>
+                                <li>Pimpinan Pusat IPNU 1996–2003</li>
+                                <li>Wakil Ketua MPD DPD KNPI Sumedang 1994–2007</li>
+                                <li>Ketua Umum Senat Mahasiswa Sekolah Tinggi Teknologi Garut (STTG) 1994–1996</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prestasi" class="fluid py-20 bg-primary-bg">
+            <div class="flex flex-col content-center justify-center items-center">
+                <h1 class="text-5xl font-bold text-black text-center"> Prestasi</h1>
+                <p class="text-xl font-medium text-black text-center pt-1 pb-12">Prestasi Selama Menjabat Sebagai
+                    Bupati</p>
+                <div
+                    class="flex flex-col-reverse xl:flex-row items-center xl:w-4/5 gap-8 xl:justify-between group card">
+                    <div class="flex  flex-col-reverse xl:flex-col w-full xl:w-2/3">
+                        <ul class="list-disc text-lg font-medium ml-8">
+                            <li>Indeks Pembanguan Manusia (IPM) Kab. Sumedang pada 2022 berada di peringkat 11 di Jawa
+                                Barat
+                                dan menjadi kelima tercepat dalam pertumbuhan IPM.</li>
+                            <li>Kemiskinan di Sumedang turun pada 2022, sebesar 0,57%, menjadikan kedua terbaik di Jawa
+                                Barat.</li>
+                            <li>Tingkat Pengangguran Terbuka (TPT) Kabupaten Sumedang turun 15,9%, lebih cepat dari
+                                rata-rata Jawa Barat.</li>
+                            <li>Pertumbuhan ekonomi Sumedang pada 2022 mengalami peningkatan sebesar 1,86% atau
+                                meningkat
+                                58,68% dari 2021, menunjukkan pemulihan ekonomi pasca-pandemi.</li>
+                            <li>PDRB Perkapita Sumedang tumbuh 7,25%, dimana pertumbuhannya lebih cepat dari rata-rata
+                                Jawa
+                                Barat.</li>
+                        </ul>
+                    </div>
+                    <img src="assets/img/img-prestasi.png" alt="" srcset="" class="max-w-lg xl:w-1/3">
+                </div>
+            </div>
+        </section>
+        <section id="penghargaan" class="fluid py-20 bg-primary-main">
+            <div class="flex flex-col xl:flex-row items-center w-full gap-14">
+                <div class="max-w-lg xl:w-2/5"> <img src="assets/img/img-penghargaan.png" alt="" srcset=""
+                        class="w-full">
+                </div>
+                <div class="flex flex-col w-full xl:w-3/5">
+                    <h1 class="text-5xl font-bold text-white ">Penghargaan</h1>
+                    <p class="text-xl font-medium text-white  pt-1 pb-12">Lebih Dari 100 Penghargaan Didapatkan
+                    </p>
+                    <div class="flex  flex-col-reverse xl:flex-col group card">
+                        <ul class="list-disc text-lg font-medium ml-8">
+                            <li>Indeks Pembanguan Manusia (IPM) Kab. Sumedang pada 2022 berada di peringkat 11 di Jawa
+                                Barat
+                                dan menjadi kelima tercepat dalam pertumbuhan IPM.</li>
+                            <li>Kemiskinan di Sumedang turun pada 2022, sebesar 0,57%, menjadikan kedua terbaik di Jawa
+                                Barat.</li>
+                            <li>Tingkat Pengangguran Terbuka (TPT) Kabupaten Sumedang turun 15,9%, lebih cepat dari
+                                rata-rata Jawa Barat.</li>
+                            <li>Pertumbuhan ekonomi Sumedang pada 2022 mengalami peningkatan sebesar 1,86% atau
+                                meningkat
+                                58,68% dari 2021, menunjukkan pemulihan ekonomi pasca-pandemi.</li>
+                            <li>PDRB Perkapita Sumedang tumbuh 7,25%, dimana pertumbuhannya lebih cepat dari rata-rata
+                                Jawa
+                                Barat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="fluid py-20 bg-primary-bg">
+            <div class="flex flex-col xl:flex-row items-center gap-14 w-full">
+                <div class="flex flex-col w-full xl:w-3/5">
+                    <div class="label">
+                        Dukung Pa Dony
+                    </div>
+                    <h1 class="text-5xl font-bold text-black pt-1 pb-12 "> Menjadi Bupati <br> Sumedang 2024-2029</h1>
+                    <div class="flex  flex-col-reverse xl:flex-col">
+                        <form action="">
+                            <div class="col-span-full pb-4">
+                                <label for="nama" class="block text-sm font-medium leading-6 text-black">Nama
+                                    Lengkap</label>
+                                <div class="mt-2 sh-4">
+                                    <input type="text" name="nama" id="nama" autocomplete="name"
+                                        placeholder="Masukan nama lengkap"
+                                        class="block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-black placeholder:text-gray-500 sh-4 focus:ring-2 focus:ring-inset focus:ring-primary-main sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="col-span-full pb-4">
+                                <label for="alamat"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Alamat</label>
+                                <div class="mt-2 sh-4">
+                                    <textarea id="alamat" name="alamat" rows="3" autocomplete="street-address"
+                                        placeholder="Masukan alamat anda" class="block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset
+                                    ring-black placeholder:text-gray-500 sh-4 focus:ring-2 focus:ring-inset
+                                    focus:ring-primary-main sm:text-sm sm:leading-6"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-span-full pb-4">
+                                <label for="wa" class="block text-sm font-medium leading-6 text-gray-900">Nomor
+                                    WhatsApp</label>
+                                <div class="mt-2 sh-4">
+                                    <div
+                                        class="flex rounded-md shadow-sm ring-1 ring-inset ring-black border-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
+                                        <span
+                                            class="flex select-none items-center px-3 text-gray-500 sm:text-sm bg-gray-50 order-0 py-1.5 pl-1 
+                                        placeholder:text-gray-500 border-y border-l border-black sh-4 sm:leading-6 ">+62</span>
+                                        <input type="number" name="wa" id="wa" class="w-full flex-1 border-0 bg-white py-1.5 pl-1 text-black
+                                        placeholder:text-gray-500 ring-1 ring-inset
+                                        ring-black sh-4 focus:ring-2 focus:ring-inset
+                                        focus:ring-primary-main sm:text-sm sm:leading-6" placeholder="82...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-wrap w-full justify-between gap">
+                                <h6 class="text-black text-sm font-bold">*Dapatkan <span
+                                        class="text-primary-main text-sm font-bold">“Hadiah Menarik“</span>di undi tiap
+                                    bulan melalui WhatsApp</h6>
+                                <button class="btn-primary" type="submit">Kirim Dukungan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="max-w-lg xl:w-2/5"> <img src="assets/img/img-cta.png" alt="" srcset="" class="w-full"></div>
+            </div>
+        </section>
+    </main>
+    <footer class=" fluid bg-white flex flex-col  py-6 xl:py-16">
+        <div class="flex flex-col xl:flex-row w-full items-center justify-between  border-y-2 border-black py-2 gap-4">
+            <div class="flex items-center">
+                <img src="assets/img/logo.png" alt="" srcset="">
+                <span class="text-sm font-semibold text-black">Dony Ahmad Munir</span>
+            </div>
+            <div class="flex flex-row flex-wrap gap-4">
+                <a href="#profil"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Profil</a>
+                <a href="#prestasi"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Prestasi</a>
+                <a href="#penghargaan"
+                    class="inline-flex items-center text-black text-base font-medium content-center px-2 py-1 hover:border-b-[3px] hover:border-primary-main">Penghargaan</a>
+            </div>
+            <div class="flex flex-row gap-4">
+                <a href="https://www.instagram.com/donyahmad.munir/" target="_blank"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                        class="hover:bg-primary-main rounded-full" fill="none">
+                        <circle cx="15" cy="15" r="14.5" stroke="black" />
+                        <path
+                            d="M18.738 10.422C18.5719 10.422 18.4095 10.4713 18.2713 10.5636C18.1332 10.6559 18.0255 10.7871 17.9619 10.9405C17.8984 11.094 17.8817 11.2629 17.9141 11.4259C17.9466 11.5888 18.0266 11.7385 18.144 11.856C18.2615 11.9734 18.4112 12.0534 18.5741 12.0859C18.7371 12.1183 18.906 12.1016 19.0595 12.0381C19.2129 11.9745 19.3441 11.8668 19.4364 11.7287C19.5287 11.5905 19.578 11.4281 19.578 11.262C19.578 11.0392 19.4895 10.8256 19.332 10.668C19.1744 10.5105 18.9608 10.422 18.738 10.422ZM21.958 12.116C21.9444 11.5352 21.8356 10.9606 21.636 10.415C21.458 9.94819 21.181 9.52549 20.824 9.176C20.4774 8.8172 20.0537 8.54192 19.585 8.371C19.0409 8.16531 18.4656 8.05405 17.884 8.042C17.142 8 16.904 8 15 8C13.096 8 12.858 8 12.116 8.042C11.5344 8.05405 10.9591 8.16531 10.415 8.371C9.94717 8.54365 9.52385 8.81869 9.176 9.176C8.8172 9.52262 8.54192 9.94631 8.371 10.415C8.16531 10.9591 8.05405 11.5344 8.042 12.116C8 12.858 8 13.096 8 15C8 16.904 8 17.142 8.042 17.884C8.05405 18.4656 8.16531 19.0409 8.371 19.585C8.54192 20.0537 8.8172 20.4774 9.176 20.824C9.52385 21.1813 9.94717 21.4563 10.415 21.629C10.9591 21.8347 11.5344 21.946 12.116 21.958C12.858 22 13.096 22 15 22C16.904 22 17.142 22 17.884 21.958C18.4656 21.946 19.0409 21.8347 19.585 21.629C20.0537 21.4581 20.4774 21.1828 20.824 20.824C21.1826 20.4758 21.4598 20.0527 21.636 19.585C21.8356 19.0394 21.9444 18.4648 21.958 17.884C21.958 17.142 22 16.904 22 15C22 13.096 22 12.858 21.958 12.116ZM20.698 17.8C20.6929 18.2443 20.6124 18.6846 20.46 19.102C20.3482 19.4066 20.1687 19.6819 19.935 19.907C19.708 20.1384 19.4333 20.3175 19.13 20.432C18.7126 20.5844 18.2723 20.6649 17.828 20.67C17.128 20.705 16.869 20.712 15.028 20.712C13.187 20.712 12.928 20.712 12.228 20.67C11.7666 20.6786 11.3072 20.6076 10.87 20.46C10.58 20.3397 10.3179 20.161 10.1 19.935C9.86766 19.7101 9.69039 19.4346 9.582 19.13C9.4111 18.7066 9.31631 18.2564 9.302 17.8C9.302 17.1 9.26 16.841 9.26 15C9.26 13.159 9.26 12.9 9.302 12.2C9.30514 11.7457 9.38807 11.2956 9.547 10.87C9.67023 10.5745 9.85939 10.3112 10.1 10.1C10.3127 9.85932 10.5755 9.66817 10.87 9.54C11.2967 9.38603 11.7464 9.30556 12.2 9.302C12.9 9.302 13.159 9.26 15 9.26C16.841 9.26 17.1 9.26 17.8 9.302C18.2443 9.3071 18.6846 9.38757 19.102 9.54C19.4201 9.65806 19.7056 9.84999 19.935 10.1C20.1644 10.315 20.3436 10.5779 20.46 10.87C20.6156 11.2963 20.6961 11.7462 20.698 12.2C20.733 12.9 20.74 13.159 20.74 15C20.74 16.841 20.733 17.1 20.698 17.8ZM15 11.409C14.2901 11.4104 13.5965 11.6222 13.0069 12.0176C12.4172 12.413 11.9581 12.9743 11.6873 13.6306C11.4166 14.2869 11.3465 15.0087 11.4859 15.7049C11.6252 16.401 11.9678 17.0402 12.4703 17.5417C12.9727 18.0432 13.6126 18.3845 14.309 18.5225C15.0054 18.6605 15.7271 18.589 16.3828 18.317C17.0386 18.045 17.599 17.5847 17.9933 16.9943C18.3876 16.4039 18.598 15.7099 18.598 15C18.5989 14.5276 18.5064 14.0596 18.3259 13.6231C18.1453 13.1865 17.8802 12.79 17.5458 12.4562C17.2114 12.1225 16.8144 11.8582 16.3775 11.6785C15.9406 11.4987 15.4724 11.4072 15 11.409ZM15 17.331C14.539 17.331 14.0883 17.1943 13.705 16.9382C13.3216 16.682 13.0229 16.318 12.8464 15.892C12.67 15.4661 12.6238 14.9974 12.7138 14.5452C12.8037 14.0931 13.0257 13.6777 13.3517 13.3517C13.6777 13.0257 14.0931 12.8037 14.5452 12.7138C14.9974 12.6238 15.4661 12.67 15.892 12.8464C16.318 13.0229 16.682 13.3216 16.9382 13.705C17.1943 14.0883 17.331 14.539 17.331 15C17.331 15.3061 17.2707 15.6092 17.1536 15.892C17.0364 16.1748 16.8647 16.4318 16.6483 16.6483C16.4318 16.8647 16.1748 17.0364 15.892 17.1536C15.6092 17.2707 15.3061 17.331 15 17.331Z"
+                            fill="black" />
+                    </svg></a>
+                <a href="https://www.facebook.com/donyahmadmunir" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                        class="hover:bg-primary-main rounded-full" fill="none">
+                        <circle cx="15" cy="15" r="14.5" stroke="black" />
+                        <path
+                            d="M13.6139 22.2H16.2509V15.63H18.4559L18.7889 13.074H16.2509V11.436C16.2509 10.698 16.4579 10.194 17.5199 10.194H18.8789V7.89899C18.6449 7.87199 17.8439 7.79999 16.9079 7.79999C14.9459 7.79999 13.6139 8.99699 13.6139 11.184V13.074H11.3999V15.63H13.6139V22.2Z"
+                            fill="black" />
+                    </svg></a>
+                <a href="https://twitter.com/donyahmadmunir" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                        class="hover:bg-primary-main rounded-full" fill="none">
+                        <circle cx="15" cy="15" r="14.5" stroke="black" />
+                        <path
+                            d="M18.6196 9.3125H20.5492L16.3335 14.1308L21.293 20.6875H17.4092L14.3677 16.7109L10.8875 20.6875H8.95666L13.4658 15.5337L8.70874 9.3125H12.69L15.4392 12.9472L18.6196 9.3125ZM17.9423 19.5325H19.0116L12.1096 10.4068H10.9622L17.9423 19.5325Z"
+                            fill="black" />
+                    </svg></a>
+            </div>
+        </div>
+        <span class="text-sm font-medium text-gray-600 text-center pt-6">© 2024 - Dony Ahmad Munir </span>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+
+        // Fungsi untuk menyembunyikan menu ketika mengklik atau fokus di luar menu
+        document.addEventListener("click", function (event) {
+            var nav = document.getElementById("nav");
+            var targetElement = event.target;
+
+            // Periksa apakah targetElement berada di dalam menu atau tidak
+            var isClickInsideMenu = nav.contains(targetElement);
+
+            // Jika tidak, maka sembunyikan menu
+            if (!isClickInsideMenu) {
+                menu.classList.add("hidden");
+            }
+        });
+
+        function switchActiveMenu(currentMenu) {
+            var menu = document.getElementsByClassName("menu");
+            for (var i = 0; i < menu.length; i++) {
+                menu[i].classList.remove("active");
+            }
+            currentMenu.classList.add("active");
+
+            var nav = document.getElementById("menu");
+            nav.classList.add("hidden");
+        }
+    </script>
+</body>
+
+</html>

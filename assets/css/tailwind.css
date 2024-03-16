@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .label{
+        @apply text-xl font-bold text-black bg-yellow px-4 py-1 w-fit border-solid border-2 border-black rounded-full;
+    }
+    .fluid{
+        @apply px-4 md:px-12 xl:px-36 border-t-4 border-black flex items-center;
+    }
+    .sh-4{
+    box-shadow: 4px 4px 0px 0px #000;
+    }
+     .sh-6{
+    box-shadow: 6px 6px 0px 0px #000;
+    }
+    .sh-12{
+    box-shadow: 12px 12px 0px 0px #000;
+    }
+    .btn-primary{
+        @apply inline-flex py-2 px-4 bg-primary-main text-sm font-semibold text-white border-solid border-2 border-black hover:border-0 hover:sh-4;
+    }
+    .btn-outline{
+        @apply inline-flex py-2 px-4 bg-white text-sm font-semibold text-black border-solid border-2 border-black hover:border-0 hover:sh-4;
+    }
+    .card{
+        @apply p-6 bg-white sh-6 border-4 border-black hover:sh-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ;
+    }
+    .card-title{
+        @apply text-2xl font-bold text-black;
+    }
+    .card-body{
+        @apply text-lg font-medium text-black;
+    }
+}
+
+@layer base {
+html {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+}
+.text-xs, .text-sm, .text-base, .text-lg{
+    font-family: "Inter", system-ui, sans-serif;
+
+}
+.text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl,.text-7xl,.text-8xl,.text-9xl, {
+font-family: "Space Grotesk", system-ui, sans-serif;
+}
+}
