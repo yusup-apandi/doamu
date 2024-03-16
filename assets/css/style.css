@@ -1755,6 +1755,19 @@ html {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-dvh {
+    height: 100dvh;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1778,8 +1791,16 @@ html {
     display: none;
   }
 
+  .md\:h-dvh {
+    height: 100dvh;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
   }
 
   .md\:grid-cols-2 {
