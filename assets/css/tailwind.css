@@ -20,7 +20,7 @@
     box-shadow: 12px 12px 0px 0px #000;
     }
     .btn-primary{
-        @apply inline-flex py-2 px-4 bg-primary-main text-sm font-semibold text-white border-solid border-2 border-black hover:border-0 hover:sh-4;
+        @apply inline-flex py-2 px-4 bg-primary-main text-sm font-semibold text-white border-solid border-2 border-black hover:border-0 hover:sh-4  items-center content-center gap-2;
     }
     .btn-outline{
         @apply inline-flex py-2 px-4 bg-white text-sm font-semibold text-black border-solid border-2 border-black hover:border-0 hover:sh-4;
@@ -34,6 +34,24 @@
     .card-body{
         @apply text-lg font-medium text-black;
     }
+    .active {
+        @apply border-b-[3px] border-primary-main;
+    }
+    .floating-banner {
+           position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 8px;
+            z-index: 9999;
+        }
+        /* Styling for close button */
+        .close-btn {
+            cursor: pointer;
+            position: absolute;
+            top: -24px;
+            right: -32px;
+        }
 }
 
 @layer base {
