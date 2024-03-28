@@ -1165,6 +1165,10 @@ html {
   margin-right: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1203,10 +1207,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .block {
@@ -1346,6 +1346,10 @@ html {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
