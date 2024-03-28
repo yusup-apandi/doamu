@@ -1152,10 +1152,6 @@ html {
   z-index: 50;
 }
 
-.z-auto {
-  z-index: auto;
-}
-
 .col-span-full {
   grid-column: 1 / -1;
 }
